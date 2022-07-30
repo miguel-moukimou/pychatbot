@@ -1,0 +1,7 @@
+readme.md
+chatbot_model.model
+training.py
+chatbot_model.h5
+intents.json
+words.pkl
+classes.pkl
