@@ -2,7 +2,7 @@ build:
   docker:
     worker: Dockerfile
   config:
-    GIT_LFS_REPOSITORY: https://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@github.com/miguel-moukimou/pychatbot
+    GIT_LFS_REPOSITORY: git@github.com:miguel-moukimou/pychatbot
 run:
   worker:
     command:
