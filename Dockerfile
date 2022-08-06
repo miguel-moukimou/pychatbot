@@ -6,7 +6,9 @@ WORKDIR /home/app_user
 
 COPY . .
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install nltk==3.7
+RUN pip install numpy==1.23.1
+RUN pip install tensorflow==2.9.1
 
 
 RUN python training.py
