@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Say Hello to the bot</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
+    <body>
+        <h1>Ask any question, the bot will reply</h1>
+        <form action="chatbot" method="post">
+            <input type="text" placeholder="Type your question here" name="question" />
+            <input type="submit" value="SEND" id="submit"/>
+        </form>
+        <div id="reply">
+            {% for message in get_flashed_messages() %}
+                <p>{{ message }}</p>
+            {% endfor %}    
+        </div>
+    </body>
+</html>

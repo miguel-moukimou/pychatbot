@@ -54,10 +54,16 @@ def process_response(intents_list, intents_json):
             break
     return result
 
-print('Ready, waiting for user input')
-
-while True:
-    message = input('')
-    ints = class_prediction(message)
+def reply_user(question):
+    ints = class_prediction(question)
     res = process_response(ints, intents)
-    print(res)
+    return res
+
+
+#print('Ready, waiting for user input')
+
+#while True:
+#    message = input('')
+#    ints = class_prediction(message)
+#    res = process_response(ints, intents)
+#    print(res)
